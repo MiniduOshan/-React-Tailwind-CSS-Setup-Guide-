@@ -10,6 +10,7 @@ A step-by-step guide to set up **Tailwind CSS** in a **React** project using **V
 * [Project Setup](#project-setup)
 * [Installing React DOM](#installing-react-dom)
 * [Installing React Router](#installing-react-router)
+* [Installing React Icons](#installing-react-icons)
 * [Installing Tailwind CSS with Vite Plugin](#installing-tailwind-css-with-vite-plugin)
 * [Customizing Tailwind](#customizing-tailwind)
 * [Best Practices](#best-practices)
@@ -54,6 +55,32 @@ Install `react-router-dom` for routing support in your React project:
 
 ```bash
 npm install react-router-dom
+```
+
+---
+
+## Installing React Icons
+
+Install `react-icons` to use popular icon libraries in your project:
+
+```bash
+npm install react-icons
+```
+
+**Usage Example:**
+
+```jsx
+import { FaBeer } from "react-icons/fa";
+
+function Home() {
+  return (
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold text-green-600">Cheers! <FaBeer className="inline ml-2 text-yellow-500" /></h1>
+    </div>
+  );
+}
+
+export default Home;
 ```
 
 ---
@@ -191,6 +218,7 @@ module.exports = {
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 * [React Documentation](https://reactjs.org/docs/getting-started.html)
 * [React Router Documentation](https://reactrouter.com/)
+* [React Icons Documentation](https://react-icons.github.io/react-icons/)
 * [Vite Documentation](https://vitejs.dev/guide/)
 
 ---
